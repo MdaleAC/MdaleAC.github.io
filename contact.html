@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rocky Mountain Vista | Contact Form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact Rocky Mountain Vista for booking inquiries, room availability, and general questions.">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <h1>Rocky Mountain Vista</h1>
+  </header>
+
+  <nav>
+    <ul> 
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms/riverside_retreat.html">Riverside Retreat</a></li>
+      <li><a href="rooms/summit_suite.html">Summit Suite</a></li>
+      <li><a href="events/weekend.html">Weekend Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h3>Contact Form</h3>
+	
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label>Reason for Contact:</label><br>
+      <input type="radio" id="booking" name="reason" value="Booking Inquiry">
+      <label for="booking">Booking Inquiry</label><br>
+
+      <input type="radio" id="general" name="reason" value="General Question">
+      <label for="general">General Question</label><br>
+
+      <input type="radio" id="support" name="reason" value="Support">
+      <label for="support">Support</label><br><br>
+
+      <label for="updates">Sign up for email updates:</label>
+      <input type="checkbox" id="updates" name="updates" value="Yes"><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+
+    </form>
+
+  </main>
+
+  <footer>
+    Copyright &copy; 2025  
+    <a href="mailto:mgdale@amarillocollege.com">Matt Dale</a> 
+  </footer>
+
+</div>
+</body>
+</html>
